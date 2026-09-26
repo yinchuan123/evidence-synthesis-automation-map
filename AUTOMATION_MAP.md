@@ -278,7 +278,8 @@ weaknesses did not materialise.
 - The benchmark ran inside an agent harness that can fetch API responses directly, so an ordinary
   chat interface may do worse.
 - The answer keys were assembled with model assistance from primary sources, so a key can be wrong —
-  and twice it was.
+  and once it was: on the retraction task the model found a published correction the key had missed,
+  and the key was amended before scoring.
 - "Mentions a database in full text" is a proxy for "searched that database", not a determination.
   A mention can sit in a reference title or a limitations sentence.
 - The PMC denominator is open-access-skewed, about 59% the size of the PubMed count for the same
