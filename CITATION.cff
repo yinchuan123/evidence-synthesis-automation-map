@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+type: dataset
+title: "Evidence Synthesis Automation Map"
+message: "If you use this map or its benchmark, please cite it using the metadata in this file."
+abstract: >-
+  A maintained map of automation in evidence synthesis. For 26 steps of a systematic review or
+  meta-analysis it records which tools already do the work, what they cost, and what they leave to
+  the human, with a check date on every row. It also carries a measured probe of how much of the same
+  work a web-enabled large language model already does: nine tasks set from real published material,
+  with the method, the scoring rules, the results and the limits. The answer keys were built from the
+  primary sources by a separate agent before the model under test saw anything, which is not the same
+  as an independent second human extractor; on one task the model found something a key had missed
+  and that key was corrected before scoring. This is a first public version, and rows will be added
+  and corrected as tools change.
+authors:
+  - family-names: Yin
+    given-names: Chuan
+    orcid: "https://orcid.org/0009-0005-2830-8167"
+    email: yinchuan@sjtu.edu.cn
+    affiliation: Shanghai Jiao Tong University
+license: CC-BY-4.0
+version: 0.1.0
+date-released: 2026-09-26
+repository-code: "https://github.com/yinchuan123/evidence-synthesis-automation-map"
+keywords:
+  - evidence synthesis
+  - systematic review
+  - meta-analysis
+  - research automation
+  - research software
+  - reproducibility
+  - PRISMA
+  - large language models
+  - benchmark

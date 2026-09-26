@@ -1,0 +1,126 @@
+name: Add or fix a tool
+description: Propose a tool for the automation map, or correct a row that is already there.
+title: "[tool] "
+labels: ["tool row"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        One tool per issue, please. Every row in the map needs a source and a check date — the
+        rules are in `CONTRIBUTING.md` in this repository. If you could not verify something,
+        write "unverified" rather than guessing.
+
+  - type: input
+    id: tool-name
+    attributes:
+      label: Tool name
+      description: As the tool calls itself.
+      placeholder: e.g. ASySD
+    validations:
+      required: true
+
+  - type: input
+    id: link
+    attributes:
+      label: Link
+      description: The tool's own page — website, repository, CRAN page, docs, or the developers' paper. Not a blog post about it.
+      placeholder: https://...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: step
+    attributes:
+      label: Which step of the map
+      description: Pick the step this tool mainly serves. If it spans two, pick the main one and explain below.
+      options:
+        - Question, protocol and registration
+        - Building the search strategy
+        - Translating a search strategy between databases
+        - Running searches and archiving the search record
+        - Deduplicating records
+        - Screening (title/abstract and full text)
+        - Collating multiple reports into one study
+        - Data extraction
+        - Reconciling two extractors' data
+        - Risk of bias and trustworthiness checks
+        - Effect-size preparation and conversion
+        - Synthesis, meta-analysis and figures
+        - Certainty of evidence (GRADE) and summary tables
+        - Reporting and submission checks (PRISMA, flow diagram, registration comparison)
+        - Maintenance after publication (retractions, corrections, updates)
+        - Other / spans several steps
+    validations:
+      required: true
+
+  - type: dropdown
+    id: cost
+    attributes:
+      label: Free or paid
+      options:
+        - Free
+        - Free and open source
+        - Free tier plus paid tiers
+        - Paid only
+        - Free for some users (e.g. institutional or Cochrane access)
+        - Unverified — could not see the pricing
+    validations:
+      required: true
+
+  - type: input
+    id: cost-detail
+    attributes:
+      label: Price you actually saw
+      description: The figure and currency as printed on the page, or "unverified" with the reason.
+      placeholder: e.g. USD 339 per review per year; or "unverified — pricing behind a login"
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-it-does
+    attributes:
+      label: What it does, in one sentence
+      description: In the tool's own terms. Not an endorsement, not a feature list.
+    validations:
+      required: true
+
+  - type: textarea
+    id: left-to-human
+    attributes:
+      label: What it does not do
+      description: The specific part of the step still left to the human. This is the column the map exists for. Write "nothing we found" if the step is genuinely finished.
+    validations:
+      required: true
+
+  - type: textarea
+    id: verified
+    attributes:
+      label: What you verified, and when
+      description: |
+        Which pages you opened, what you saw there, and the date. Include anything you could not
+        reach (403, login wall, bot check) — a recorded absence is useful.
+      placeholder: |
+        Opened https://example.org/pricing on 2026-09-20: free tier listed as 3 projects/month.
+        Opened the GitHub repo on 2026-09-20: MIT licence, last commit 2026-08-14.
+        Could not open the documentation page — returned 403 from my network.
+    validations:
+      required: true
+
+  - type: input
+    id: your-tool
+    attributes:
+      label: Is this your own tool?
+      description: Optional, and welcome either way. Corrections about your own tool are not treated as a conflict of interest — we just note who reported the change.
+      placeholder: e.g. "Yes, I maintain it" / "No"
+
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: Before you submit
+      options:
+        - label: This issue is about one tool.
+          required: true
+        - label: Every claim above is something I opened a page and saw, or is marked unverified.
+          required: true
+        - label: I have not named any specific paper, author, journal article or trial as having data problems, impossible numbers, registration discrepancies or duplicate publication.
+          required: true

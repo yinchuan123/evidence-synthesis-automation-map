@@ -1,0 +1,45 @@
+# Dependencies
+node_modules/
+
+# macOS
+.DS_Store
+
+# Editor and OS cruft
+.vscode/
+.idea/
+*.swp
+*~
+
+# Scratch and working files (not part of the map)
+scratch/
+scratch*
+tmp/
+*.tmp
+*.bak
+*.orig
+*.log
+draft-*
+notes-local-*
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Benchmark working material. The task texts and answer keys name specific articles, so they are
+# not published here — see "What does not belong here" in CONTRIBUTING.md. These patterns are the
+# shapes those working files arrive in; they are a backstop, not a substitute for reading a diff
+# before committing anything under benchmark/.
+*_raw.json
+truth*.json
+llm_runs*.json
+inputs.json
+cands_*.json
+gate*
+prescreen_*
+verify_*
+00_*_ZH.md
+benchmark/**/task*
+benchmark/**/key*
+benchmark/**/answer*
