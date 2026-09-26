@@ -1,5 +1,7 @@
 # Evidence Synthesis Automation Map
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22981564.svg)](https://doi.org/10.5281/zenodo.22981564)
+
 [简体中文](README.zh-CN.md)
 
 A maintained map of which steps of a systematic review or meta-analysis already have working
@@ -153,6 +155,8 @@ If the map is useful to you, watching or starring the repository helps other peo
 text as Creative Commons publishes it; [NOTICE](NOTICE) says how to attribute reuse.
 
 ## How to cite
+
+Yin, C. (2026). *Evidence synthesis automation map, and a measured probe of what a web-enabled LLM already does*. Zenodo. https://doi.org/10.5281/zenodo.22981564
 
 Citation metadata is in [CITATION.cff](CITATION.cff); GitHub renders it as a ready-made citation
 from the "Cite this repository" link on the repository page.

@@ -1,5 +1,7 @@
 # 证据合成自动化地图
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22981564.svg)](https://doi.org/10.5281/zenodo.22981564)
+
 [English](README.md)
 
 一份持续维护的地图：系统评价／Meta 分析的每一个步骤，哪些已经有能用的工具、工具收多少钱、还有哪些留给人做；
@@ -126,6 +128,8 @@ ORCID [0009-0005-2830-8167](https://orcid.org/0009-0005-2830-8167)
 官方发布的许可正文；[NOTICE](NOTICE) 说明转用时怎么署名。
 
 ## 如何引用
+
+Yin, C. (2026). *Evidence synthesis automation map, and a measured probe of what a web-enabled LLM already does*. Zenodo. https://doi.org/10.5281/zenodo.22981564
 
 引用元数据在 [CITATION.cff](CITATION.cff)；GitHub 会在仓库页面的 "Cite this repository" 处直接渲染成
 可复制的引文。
