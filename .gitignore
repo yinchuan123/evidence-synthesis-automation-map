@@ -43,3 +43,4 @@ verify_*
 benchmark/**/task*
 benchmark/**/key*
 benchmark/**/answer*
+social-card.png
